@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vitamin — персональный помощник для твоего здоровья.">
+  <title>Vitamin — персональный помощник для твоего здоровья</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__vitamins" aria-hidden="true"></div>
+      <header class="site-header reveal" style="--reveal-delay: 0ms">
+        <button class="mobile-menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-navigation">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <a class="brand" href="#home" aria-label="Vitamin — на главную">
+          <span class="brand__mark" aria-hidden="true"><img src="img/logo.svg" alt="logo"></span>
+          <span class="brand__name">Vitamin</span>
+        </a>
+
+        <nav class="site-nav reveal" id="primary-navigation" style="--reveal-delay: 120ms" aria-label="Основная навигация">
+          <a class="nav-link is-active" href="#home" aria-current="page">Главная</a>
+          <a class="nav-link" href="#about">О нас</a>
+          <a class="nav-link" href="#contacts">Контакты</a>
+        </nav>
+
+        <a class="button button--primary header-cta reveal" style="--reveal-delay: 220ms" href="#try">
+          <span class="header-cta__label">Попробовать</span>
+          <svg class="header-cta__arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M5 19 19 5M7 5h12v12" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </header>
+
+      <div class="hero__content" id="about">
+        <h1 class="hero__title reveal" style="--reveal-delay: 360ms" id="hero-title">Vitamin — персональный помощник<br class="desktop-break"> для твоего здоровья</h1>
+        <p class="hero__description reveal" style="--reveal-delay: 520ms">
+          Следи за уровнем витаминов и важными показателями, загружай анализы, записывай питание<br class="desktop-break">
+          и приём добавок, а AI-консультант поможет разобраться в данных и повседневных привычках.
+        </p>
+        <a class="button button--primary hero__cta reveal" style="--reveal-delay: 700ms" id="try" href="#contacts">Попробовать бесплатно</a>
+      </div>
+    </section>
+
+    <section class="analysis-section" id="analyses" aria-labelledby="analysis-title">
+      <div class="analysis-section__inner">
+        <h2 class="analysis-section__title reveal" id="analysis-title">Загружай анализы и наблюдай<br class="desktop-break"> за своими показателями</h2>
+        <p class="analysis-section__description reveal" style="--reveal-delay: 180ms">Загружай результаты лабораторных анализов и сохраняй показатели в одном месте. Vitamin помогает отслеживать изменения со временем и обращать внимание на показатели, которые стоит обсудить со специалистом.</p>
+        <div class="metrics-grid" aria-label="Примеры показателей витаминов">
+          <article class="metric-card reveal" style="--reveal-delay: 360ms">
+            <h3 class="metric-card__title">Витамин A</h3>
+            <div class="metric-card__chart" role="img" aria-label="Витамин A: 5 процентов">
+              <svg class="metric-card__ring" viewBox="0 0 120 120" aria-hidden="true"><circle class="metric-card__track" cx="60" cy="60" r="48"/><circle class="metric-card__progress" cx="60" cy="60" r="48" pathLength="100" stroke-dasharray="5 100"/></svg>
+              <span class="metric-card__value">5%</span>
+            </div>
+            <p class="metric-card__trend">Рост за месяц <span aria-hidden="true">▲</span></p>
+          </article>
+          <article class="metric-card reveal" style="--reveal-delay: 500ms">
+            <h3 class="metric-card__title">Витамин D</h3>
+            <div class="metric-card__chart" role="img" aria-label="Витамин D: 3 процента">
+              <svg class="metric-card__ring" viewBox="0 0 120 120" aria-hidden="true"><circle class="metric-card__track" cx="60" cy="60" r="48"/><circle class="metric-card__progress" cx="60" cy="60" r="48" pathLength="100" stroke-dasharray="3 100"/></svg>
+              <span class="metric-card__value">3%</span>
+            </div>
+            <p class="metric-card__trend">Падение за месяц <span aria-hidden="true">▼</span></p>
+          </article>
+          <article class="metric-card reveal" style="--reveal-delay: 640ms">
+            <h3 class="metric-card__title">Витамин B</h3>
+            <div class="metric-card__chart" role="img" aria-label="Витамин B: 13 процентов">
+              <svg class="metric-card__ring" viewBox="0 0 120 120" aria-hidden="true"><circle class="metric-card__track" cx="60" cy="60" r="48"/><circle class="metric-card__progress" cx="60" cy="60" r="48" pathLength="100" stroke-dasharray="13 100"/></svg>
+              <span class="metric-card__value">13%</span>
+            </div>
+            <p class="metric-card__trend">Рост за месяц <span aria-hidden="true">▲</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-section" id="ai-consultant" aria-labelledby="ai-title">
+      <div class="ai-section__inner">
+        <h2 class="ai-section__title reveal" id="ai-title" style="--reveal-delay: 0ms">
+          Твой AI-консультант<br class="desktop-break"> всегда под рукой
+        </h2>
+        <p class="ai-section__description reveal" style="--reveal-delay: 180ms">
+          Не знаешь, что означает показатель в анализах? Хочешь понять, какие продукты содержат нужные нутриенты? Спроси Vitamin. AI учитывает информацию из твоего профиля и помогает разобраться в вопросах питания и витаминов простым языком.
+        </p>
+        <div class="ai-section__visual reveal" style="--reveal-delay: 360ms">
+          <img class="ai-section__image" src="img/consultant.png" alt="Интерфейс AI-консультанта Vitamin" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+
+    <section class="recipes-section" id="recipes" aria-labelledby="recipes-title">
+      <div class="recipes-section__inner">
+        <h2 class="recipes-section__title reveal" id="recipes-title" style="--reveal-delay: 0ms">
+          Не просто узнай о дефиците —<br class="desktop-break"> узнай, что съесть
+        </h2>
+        <p class="recipes-section__description reveal" style="--reveal-delay: 180ms">
+          Vitamin помогает находить рецепты и продукты, которые подходят под твои текущие потребности. Добавляй приёмы пищи, отслеживай рацион и находи идеи, как восполнять необходимые нутриенты через еду.
+        </p>
+
+        <div class="recipes-grid" aria-label="Примеры карточек рецептов">
+          <article class="recipe-card reveal" style="--reveal-delay: 360ms">
+            <div class="recipe-card__visual"><img src="img/recipe-card-1.png" alt="" loading="lazy"></div>
+            <div class="recipe-card__content">
+              <h3 class="recipe-card__title">Тыква</h3>
+              <p class="recipe-card__calories">22 ккал</p>
+              <ul class="recipe-card__nutrients" aria-label="Нутриенты">
+                <li class="nutrient nutrient--coral">Si</li>
+                <li class="nutrient nutrient--orange">A</li>
+                <li class="nutrient nutrient--lime">Cu</li>
+                <li class="nutrient nutrient--blue">C</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="recipe-card reveal" style="--reveal-delay: 500ms">
+            <div class="recipe-card__visual"><img src="img/recipe-card-2.png" alt="" loading="lazy"></div>
+            <div class="recipe-card__content">
+              <h3 class="recipe-card__title">Рыба</h3>
+              <p class="recipe-card__calories">134 ккал</p>
+              <ul class="recipe-card__nutrients" aria-label="Нутриенты">
+                <li class="nutrient nutrient--coral">D</li>
+                <li class="nutrient nutrient--orange">P</li>
+                <li class="nutrient nutrient--lime">B12</li>
+                <li class="nutrient nutrient--blue">Se</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="recipe-card reveal" style="--reveal-delay: 640ms">
+            <div class="recipe-card__visual"><img src="img/recipe-card-3.png" alt="" loading="lazy"></div>
+            <div class="recipe-card__content">
+              <h3 class="recipe-card__title">Морская капуста</h3>
+              <p class="recipe-card__calories">250 ккал</p>
+              <ul class="recipe-card__nutrients" aria-label="Нутриенты">
+                <li class="nutrient nutrient--coral">A</li>
+                <li class="nutrient nutrient--orange">B3</li>
+                <li class="nutrient nutrient--lime">B6</li>
+                <li class="nutrient nutrient--blue">E</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="journal-section" id="daily-journal" aria-labelledby="journal-title">
+      <div class="journal-section__inner">
+        <h2 class="journal-section__title reveal" id="journal-title" style="--reveal-delay: 0ms">
+          Отмечай день. Замечай закономерности.
+        </h2>
+        <p class="journal-section__description reveal" style="--reveal-delay: 180ms">
+          Записывай приёмы пищи, витамины и добавки, настроение и другие ежедневные события. Со временем Vitamin помогает собрать эти данные в единую картину твоего образа жизни.
+        </p>
+
+        <div class="journal-fan reveal" style="--reveal-delay: 320ms" aria-label="Примеры экранов дневника Vitamin">
+          <img class="journal-fan__image" src="img/journal-cards.png" alt="Примеры экранов дневника Vitamin" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+
+    <section class="closing-section" id="get-started" aria-labelledby="closing-title">
+      <div class="closing-card">
+        <div class="closing-card__content">
+          <h2 class="closing-card__title reveal" id="closing-title" style="--reveal-delay: 0ms">
+            Vitamin помогает заботиться<br class="closing-desktop-break"> о себе каждый день
+          </h2>
+          <p class="closing-card__description reveal" style="--reveal-delay: 180ms">
+            Анализы, витамины, питание, добавки, настроение и AI-консультант — всё в одном месте. Собирай данные о себе, лучше понимай свои привычки и принимай более осознанные решения о здоровье.
+          </p>
+          <a class="closing-card__button reveal" style="--reveal-delay: 360ms" href="#top">
+            Начать с Vitamin
+          </a>
+        </div>
+
+        <div class="closing-card__visual reveal" style="--reveal-delay: 480ms" role="img" aria-label="PNG-заглушка экрана приложения Vitamin на смартфоне"><img src="img/telephone.png" alt="Экран приложения Vitamin на смартфоне" loading="lazy"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand-column">
+        <a class="footer-brand reveal" href="#top" aria-label="Vitamin — на главную" style="--reveal-delay: 0ms">
+          <span>Vitamin</span>
+        </a>
+
+        <nav class="footer-nav reveal" aria-label="Навигация в подвале" style="--reveal-delay: 140ms">
+          <a class="footer-nav__link" href="#top">Главная</a>
+          <a class="footer-nav__link" href="#about">О нас</a>
+          <a class="footer-nav__link" href="#contacts">Контакты</a>
+        </nav>
+
+        <a class="footer-email reveal" href="mailto:vitamin_main@gmail.com" style="--reveal-delay: 280ms">
+          vitamin_main@gmail.com
+        </a>
+
+        <div class="footer-socials reveal" aria-label="Ссылки на приложения и социальные сети" style="--reveal-delay: 420ms">
+          <a class="footer-social" href="#" aria-label="Google Play — ссылка">
+            <svg viewBox="0 0 40 44" aria-hidden="true" focusable="false">
+              <path d="M27.06 33.2808L10 43.0994C7.21111 44.7052 3.98667 44.0429 1.97111 42.0672L18.9111 25.1366L27.06 33.2808ZM15.7756 22.0004L0.0133334 37.7504C0.00479746 37.6162 0.000350874 37.4818 0 37.3473V6.65342C0 6.5161 0.00444454 6.37951 0.0133334 6.24367L15.7756 22.0004ZM36.6667 16.2461C41.1111 18.8043 41.1111 25.1942 36.6667 27.7546L31.0422 30.9884L22.0489 22.0026L31.0444 13.0101L36.6667 16.2461ZM1.97333 1.93128C3.98889 -0.0443982 7.21333 -0.704434 10 0.901359L27.0644 10.72L18.9133 18.8641L1.97333 1.93128Z" fill="var(--icon-fg, #F6F6F6)"/>
+            </svg>
+          </a>
+
+          <a class="footer-social" href="#" aria-label="App Store — ссылка">
+            <svg viewBox="0 0 53 47" aria-hidden="true" focusable="false">
+              <path d="M12.5556 35.2518L8.27778 42.8896M30.0556 4.00073L26.1664 10.9457M26.1664 10.9457L18.0778 25.3896M26.1664 10.9457L22.2778 4.00073M44.0556 42.8896L32.0778 21.5007M4 35.1118H28.1111M41.7222 35.1118H48.3333" stroke="var(--icon-fg, #F6F6F6)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </a>
+
+          <a class="footer-social" href="#" aria-label="Социальная сеть — ссылка">
+            <svg viewBox="5 3 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 9h5c.6 7 3.6 10 6 10v-10h4v6c2.4-.3 4.5-2.4 5.4-6H29c-.6 3.6-2.7 6.4-5.2 8 2.7 1.4 4.8 4 5.7 7h-5.2c-1-2.8-3.1-4.7-5.3-5v5h-1.5C9.2 24 4.5 18.5 4 9Z" fill="currentColor"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="footer-newsletter reveal" style="--reveal-delay: 180ms">
+        <h2 class="footer-newsletter__title">Хочешь узнавать новости?</h2>
+        <form class="footer-newsletter__form" id="newsletter-form">
+          <label class="visually-hidden" for="newsletter-email">Твоя почта</label>
+          <input
+            class="footer-newsletter__input"
+            id="newsletter-email"
+            name="email"
+            type="email"
+            placeholder="Почта"
+            autocomplete="email"
+            required
+          >
+          <button class="footer-newsletter__button" type="submit">Подписаться</button>
+          <p class="footer-newsletter__message" id="newsletter-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
